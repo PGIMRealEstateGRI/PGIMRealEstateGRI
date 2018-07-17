@@ -41,10 +41,10 @@ title: PGIM Real Estate
       <a id="gri100">
            </a>
       
-      <p> GR 100: Governance: Governance structure </p>
+      <p> GRI 100: Governance: Governance structure </p>
       <form>
       <div align="left">
-      <input type="radio" value="10219" name="10219">Delegating authority <br>
+      <input type="radio" value="10219" name="10219" onclick="ClearRd(this)">Delegating authority <br>
       <input type="radio" value="10220" name="10220">Executive-level responsibility for economic,
           environmental, and social topics <br>
       <input type="radio" value="10221" name="10221">Consulting stakeholders on economic,
@@ -70,8 +70,6 @@ title: PGIM Real Estate
       <input type="radio" value="10237" name="10237">Stakeholders’ involvement in remuneration <br>
       <input type="radio" value="10238" name="10238">Annual total compensation ratio <br>
       <input type="radio" value="10239" name="10239">Percentage increase in annual total compensation ratio <br>
-        
-      <a href="#" id="clear-button">Clear</a>
         
       </form>
       </div>
@@ -322,13 +320,22 @@ title: PGIM Real Estate
       
 
     </main>
-    <script type="text/javascript">
-+    document.getElementById('clear-button').addEventListener('click', function () {
-+      ["10219", "10220", "10221", "10222", "10223", "10224", "10225", "10226", "10227", "10228"].forEach(function(id) {
-+        document.getElementById(id).checked = false;
-+      });
-+      return false;
-+    })
-+  </script>
+    
+    <script language="javascript" type="text/javascript">
+   var checkedRadio;
+  function ClearRd(this)
+
+
+   {
+        if (checkedRadio == this)
+          {
+            this.checked = false;
+            checkedRadio = null;
+           }
+       else
+          {
+            checkedRadio = this; }
+   }
+    </script>
  
   </body>
