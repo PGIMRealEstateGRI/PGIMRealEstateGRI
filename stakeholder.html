@@ -31,12 +31,12 @@ title: PGIM Real Estate
       <p> If you are a Stakeholder with PGIM Real Estate, you can contribute to the GRI by specifying
         which STG's and metrics from the GRI you would like to see in PGIM Real Estate's GRI Report: </p>
       <p> While this information is not needed for a CORE report, PGIM Real Estate would like to know what topics interest 
-        stakeholders and what information that stakeholders would like to see reported. </p>
-      <a href="#gri100"><mark>Click here to jump to 100's</mark></a>
-      <a href="#gri200"><mark>Click here to jump to 200's</mark></a>
-      <a href="#gri300"><mark>Click here to jump to 300's</mark></a>
-      <a href="#gri400"><mark>Click here to jump to 400's</mark></a>
-      <a href="#sumbit"><mark>Click here to jump to Sumbit</mark></a>
+        stakeholders and what information that stakeholders would like to see reported. </p> <br>
+      <a href="#gri100"><mark>Click here to jump to 100's</mark></a> <br>
+      <a href="#gri200"><mark>Click here to jump to 200's</mark></a> <br>
+      <a href="#gri300"><mark>Click here to jump to 300's</mark></a> <br>
+      <a href="#gri400"><mark>Click here to jump to 400's</mark></a> <br>
+      <a href="#sumbit"><mark>Click here to jump to Sumbit</mark></a> <br>
       
       <a id="gri100">
            </a>
@@ -70,6 +70,9 @@ title: PGIM Real Estate
       <input type="radio" value="10237" name="10237">Stakeholders’ involvement in remuneration <br>
       <input type="radio" value="10238" name="10238">Annual total compensation ratio <br>
       <input type="radio" value="10239" name="10239">Percentage increase in annual total compensation ratio <br>
+        
+      <a href="#" id="clear-button">Clear</a>
+        
       </form>
       </div>
     <a href="#topofpage"><mark>Click here to jump to top of page</mark></a>
@@ -302,12 +305,13 @@ title: PGIM Real Estate
       </div>
     <a href="#topofpage"><mark>Click here to jump to top of page</mark></a>
       
+      <br>
       
       <a id="submit">
            </a>
       <form>
-        Click to submit
-        <input type="submit" value="Submit">
+        Click to submit:
+        <br> <input type="submit" value="Submit">
       </form>
       
     </header>
@@ -318,6 +322,13 @@ title: PGIM Real Estate
       
 
     </main>
-    
+    <script type="text/javascript">
++    document.getElementById('clear-button').addEventListener('click', function () {
++      ["radio-a", "radio-b", "radio-c"].forEach(function(id) {
++        document.getElementById(id).checked = false;
++      });
++      return false;
++    })
++  </script>
  
   </body>
