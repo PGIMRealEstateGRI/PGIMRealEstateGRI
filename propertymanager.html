@@ -31,19 +31,53 @@ title: PGIM Real Estate
         
         Property Address:<br>
         <input type="text" name="propadd"><br>
+        
+        Is your property LEED Certified? <br>
+        <fieldset id="LEED">
+        <input type="radio" value="" name="LEED"> Yes <br>
+        <input type="radio" value="" name="LEED"> No <br>
+        </fieldset>
       
       </form>
       
       <form>
-        <p> 
+        <p> First, choose the period in which you are reporting.</p>
+        <p> If one item is daily, and another is monthly, fill out what you can daily 
+          and then fill out the form again at the end of the month. </p>
+        
         <fieldset id="ReportingPeriod">
-        <input type="radio" value="Daily" name="ReportingPeriod">
-        <input type="radio" value="Weekly"name="ReportingPeriod">
-        <input type="radio" value="Every Two Weeks" name="ReportingPeriod">
-        <input type="radio" value="Every Three Weeks" name="ReportingPeriod">
-        <input type="radio" value="Monthly" name="ReportingPeriod">
-        <input type="radio" value="Other" name="ReportingPeriod">
+        <input type="radio" value="Daily" name="ReportingPeriod"> Daily <br>
+        <input type="radio" value="Weekly"name="ReportingPeriod"> Weekly <br>
+        <input type="radio" value="Every Two Weeks" name="ReportingPeriod"> Every Two Weeks <br>
+        <input type="radio" value="Every Three Weeks" name="ReportingPeriod"> Every Three Weeks <br>
+        <input type="radio" value="Monthly" name="ReportingPeriod"> Monthly <br>
+        <input type="radio" value="Other" name="ReportingPeriod"> Other: <br>
+          If "Other", please specify: <br>
+          <input type="text" name="other"><br>
     </fieldset>
+      
+    </form>
+    
+    <form>
+      <p> Here is where you fill out what you can for the reporting period selected. </p>
+        
+      Tons of trash: <br>
+      <input type="text" name="trash"> <br> <br>
+      
+      Watts or Kilowatts of Electricity (please specify): <br>
+      <input type="text" name="electricity"> <br><br>
+      
+      Amount of water usage: <br>
+      <input type="text" name="water"> <br><br>
+      
+      Carbon emission (if any): <br>
+      <input type="text" name="carbon"> <br><br>
+      
+      Amount of paper recycled (if any): <br>
+      <input type="text" name="recycled"> <br><br>
+      
+      Amount of bottles and cans recycled (if any): <br>
+      <input type="text" name="recycle"> <br><br>
       
     </header>
 
